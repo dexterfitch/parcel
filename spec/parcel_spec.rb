@@ -17,8 +17,8 @@ describe(Parcel) do
     end
 
     it('returns the total shipping cost of an object that is greater than 512 volume and greater than 3 pounds') do
-      test_parcel = Parcel.new(10, 10, 10, 5)
-      expect(test_parcel.cost_to_ship()).to(eq(16.25))
+      test_parcel = Parcel.new(10, 10, 10, 4)
+      expect(test_parcel.cost_to_ship()).to(eq(14))
     end
   end
 
