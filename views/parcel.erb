@@ -1,3 +1,3 @@
-<p>Your package's dimensions are <%= @length %>in x <%= @width %>in x <%= @height %>in, with a weight of <%= @weight %>lbs<br>
+<p>Your package's dimensions are <%= @length %>in x <%= @width %>in x <%= @height %>in, with a weight of <%= @weight %>lbs</p>
 
-The total cost to ship this package is $<%= @result %></p>
+<p>The total cost to ship this package is $<% if @result_string[-2,1] == "." %><%= @result %>0</p><% else %><%= @result %></p><% end %>

@@ -14,5 +14,6 @@ get('/parcel') do
   @weight = params.fetch('weight').to_f
   instance = Parcel.new(@length, @width, @height, @weight)
   @result = instance.cost_to_ship()
+  @result_string = @result.to_s
   erb(:parcel)
 end
