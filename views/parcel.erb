@@ -1,3 +1,9 @@
-<p>Your package's dimensions are <%= @length %>in x <%= @width %>in x <%= @height %>in, with a weight of <%= @weight %>lbs</p>
-
-<p>The total cost to ship this package is $<% if @result_string[-2,1] == "." %><%= @result %>0</p><% else %><%= @result %></p><% end %>
+<div class="result-container">
+  <h3>Your package's dimensions are</h3>
+  <p class="res"><%= @length %>in x <%= @width %>in x <%= @height %>in</p>
+  <h3>with a weight of</h3>
+  <p class="res"><%= @weight %>lbs</p>
+  <hr>
+  <h3>The total cost to ship this package is</h3>
+  <p class="res">$<% if @result_string[-2,1] == "." %><%= @result %>0</p><% else %><%= @result %></p><% end %>
+</div>

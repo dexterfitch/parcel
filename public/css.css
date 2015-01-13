@@ -1,0 +1,64 @@
+body {
+  text-align: center;
+  background: #F8DCE9;
+  font-family: 'Roboto', sans-serif;
+  color: #FFF;
+}
+
+h1, h3 {
+  font-family: 'Slabo 27px', serif;
+}
+
+h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 8em;
+  margin-bottom: 40px;
+}
+
+.res {
+  font-size: 2em;
+}
+
+/* Gradient lifted from http://css-tricks.com/ */
+hr {
+  width: 50%;
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  background-image: -webkit-linear-gradient(left, #A63768, #fff, #A63768);
+  background-image:    -moz-linear-gradient(left, #A63768, #fff, #A63768);
+  background-image:     -ms-linear-gradient(left, #A63768, #fff, #A63768);
+  background-image:      -o-linear-gradient(left, #A63768, #fff, #A63768);
+}
+
+.result-container {
+  padding: 30px;
+}
+
+.container {
+  background: #A63768;
+  width: 50%;
+  margin-top: 5%;
+  border: 0;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+
+.form-group {
+  float: left;
+  margin: 0 10px 25px;
+  width: 20%;
+}
+
+.result {
+  padding: 10px;
+}
+
+.butt {
+  float: right;
+  margin-top: -38px;
+}
